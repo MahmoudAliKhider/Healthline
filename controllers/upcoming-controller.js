@@ -39,6 +39,7 @@ exports.addUpcoming = async (req, res, next) => {
       res.status(200).json({
         success: true,
         message: "Created successfuly !",
+        upcoming
       });
     } else {
       res.status(404).json({

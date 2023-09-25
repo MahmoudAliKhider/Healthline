@@ -48,7 +48,7 @@ exports.deleteMessage = async (req, res, next) => {
 
   if (message.sender != req.user.id) {
     return res.status(404).json({
-      success: true,
+      success: false,
       message: `You can't delete this message !`,
     });
   }
